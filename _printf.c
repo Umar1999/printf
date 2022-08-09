@@ -3,9 +3,15 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
+<<<<<<< HEAD
  * _printf - Printf function
- * @format:format.
- * Return:Printed chars.
+ * @format: format.
+ * Return: Printed chars.
+=======
+ * _printf - mimicks Printf function
+ * @format: chars to be printed along with format specifier
+ * Return: Printed chars.
+>>>>>>> edf3f6f8d58651b04cf001285fbf2f50bcf9bbb7
  */
 int _printf(const char *format, ...)
 {
@@ -14,11 +20,14 @@ int _printf(const char *format, ...)
 	va_list list;
 	char buffer[BUFF_SIZE];
 
+	/* check if chars to be printed is empty */
 	if (format == NULL)
 		return (-1);
 
+	/* initialize variadic function to iterate through the arguents of a function */
 	va_start(list, format);
 
+	/* search for format specifier */
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')

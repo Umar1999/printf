@@ -1,9 +1,12 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
+/* call standard libraries to be used */
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
 
+/* create macro */
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
@@ -21,8 +24,8 @@
 /**
  * struct fmt - Struct op
  *
- * @fmt: The format.
- * @fn: The function associated.
+ * @fmt: The name of struct.
+ * @fn: The pointer function associated.
  */
 struct fmt
 {
@@ -34,8 +37,8 @@ struct fmt
 /**
  * typedef struct fmt fmt_t - Struct op
  *
- * @fmt: The format.
- * @fm_t: The function associated.
+ * @fmt: reference struct by name
+ * @fm_t: The function initializes a data with struct fmt properties.
  */
 typedef struct fmt fmt_t;
 
@@ -114,4 +117,4 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
-#endif /* MAIN_H */
+#endif /* _MAIN_H_ */
