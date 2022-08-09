@@ -112,4 +112,4 @@ Handle the following custom conversion specifier:
 R: prints the rot13'ed string
 
 Task 15
-All the above options work well together.
+All the above options work well togethe.
