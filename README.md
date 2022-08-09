@@ -75,3 +75,11 @@ You don’t have to handle field width
 You don’t have to handle precision
 You don’t have to handle the length modifiers
 
+Task 7
+Handle the following flag characters for non-custom conversion specifiers:
+
++
+space
+#
+
+
